@@ -1,0 +1,30 @@
+# Ottr Plumr — Niagara Region Plumbing & Heating
+
+> Licensed plumbers and HVAC technicians serving the Niagara Region, Ontario. 24/7 emergency service across St. Catharines, Niagara Falls, Welland, and surrounding areas.
+
+## Business
+- Company: Ottr Plumr Plumbing & Heating
+- Phone: 289-488-1007
+- Email: info@plumr.ca
+- Address: 187 King St, Welland, ON L3B 3J4
+- Website: https://www.plumr.ca
+
+## Services
+- Residential & Commercial Plumbing
+- Emergency Plumbing (24/7)
+- Drain Cleaning
+- Water Heater Installation & Repair
+- Sump Pumps
+- Heating Systems (Furnaces & Boilers)
+- Repairs & Diagnostics
+
+## Service Areas
+Welland, St. Catharines, Niagara Falls, Thorold, Lincoln, Grimsby, Pelham, Fort Erie, Port Colborne, Niagara-on-the-Lake, West Lincoln, Wainfleet
+
+## Pages
+- Homepage: https://www.plumr.ca/
+- Services: https://www.plumr.ca/services
+- Service Areas: https://www.plumr.ca/service-areas
+- Blog: https://www.plumr.ca/blog
+- About: https://www.plumr.ca/about
+- Contact: https://www.plumr.ca/contact

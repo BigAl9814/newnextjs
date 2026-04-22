@@ -1,0 +1,73 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/assets
+public_folder: /assets
+
+publish_mode: editorial_workflow
+
+collections:
+  # ─── BLOG POSTS ───────────────────────────────────────────────
+  - name: blog
+    label: Blog Posts
+    folder: content/blog
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Excerpt, name: excerpt, widget: text }
+      - { label: Meta Description, name: metaDescription, widget: text }
+      - { label: Publish Date, name: publishedAt, widget: datetime, format: YYYY-MM-DD }
+      - { label: Read Time (minutes), name: readMinutes, widget: number, default: 5 }
+      - { label: City, name: city, widget: string, required: false }
+      - { label: City Slug, name: citySlug, widget: string, required: false }
+      - { label: Service, name: service, widget: string, required: false }
+      - { label: Service Slug, name: serviceSlug, widget: string, required: false }
+      - label: Body
+        name: body
+        widget: markdown
+
+  # ─── SITE SETTINGS ────────────────────────────────────────────
+  - name: settings
+    label: Site Settings
+    files:
+      - label: Business Info
+        name: business
+        file: content/settings/business.json
+        fields:
+          - { label: Phone (display), name: phoneDisplay, widget: string }
+          - { label: Phone (tel link), name: phoneTel, widget: string }
+          - { label: Email, name: email, widget: string }
+          - { label: Street Address, name: street, widget: string }
+          - { label: City, name: city, widget: string }
+          - { label: Province, name: region, widget: string }
+          - { label: Postal Code, name: postalCode, widget: string }
+
+      - label: Homepage
+        name: homepage
+        file: content/settings/homepage.json
+        fields:
+          - { label: Hero Headline, name: heroHeadline, widget: string }
+          - { label: Hero Subheading, name: heroSubheading, widget: string }
+          - { label: Hero Body Text, name: heroBody, widget: text }
+          - label: Reviews
+            name: reviews
+            widget: list
+            fields:
+              - { label: Quote, name: quote, widget: text }
+              - { label: Name, name: name, widget: string }
+          - label: FAQs
+            name: faqs
+            widget: list
+            fields:
+              - { label: Question, name: q, widget: string }
+              - { label: Answer, name: a, widget: text }
+
+      - label: About Page
+        name: about
+        file: content/settings/about.json
+        fields:
+          - { label: Page Title, name: title, widget: string }
+          - { label: Intro Text, name: intro, widget: text }
+          - { label: Body, name: body, widget: markdown }
